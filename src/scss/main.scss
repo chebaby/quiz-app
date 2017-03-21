@@ -1,0 +1,140 @@
+@charset 'UTF-8';
+//@import 'normalize';
+
+
+$primary-color : #4caf50;
+$secondary-color : #42A5F5;
+$tertiary-color : #ba68c8;
+
+$radius : 15px;
+
+body {
+	background-color: lighten($tertiary-color, 35%);
+	font-family: 'Lato', sans-serif;
+}
+
+#quiz-app {
+
+	.container {
+		display: flex;
+	    flex-direction: column;
+	    justify-content: space-around;
+		height: 70vh;
+		max-width: 700px;
+		background-color: #fff;
+		border: 3px solid lighten($tertiary-color, 25%);
+		border-radius: $radius;
+		padding: 15px;
+		margin: 50px auto 0;
+	}
+
+	.points {
+		text-align: center;
+	    display: block;
+	    font-size: 3em;
+	    color: $primary-color;
+	}
+
+	.evaluation {
+		text-align: center;
+	    display: block;
+	    color: $secondary-color;
+	}
+
+	.title {
+		text-align: center;
+		margin-bottom: 20px;
+		color: $tertiary-color;
+	}
+
+	.question {
+		text-align: center;
+		color: $primary-color;
+	}
+
+	.choices {
+		min-height: 100px;
+		height: auto;
+		padding: 15px;
+		background-color: lighten($primary-color, 35%);
+		border: 3px solid lighten($primary-color, 25%);
+		border-radius: $radius;
+	}
+
+	.row {
+		display: flex;
+		justify-content: center;
+		text-align: center;
+
+		margin: 30px auto;
+	}
+
+	.form-input {
+		
+	}
+
+	.progress {
+		width: 100%;
+	}
+
+	.half {
+		width: 50%;
+	}
+
+	.hidden {
+		display: none !important;
+	}
+
+	input[type=submit],
+	button {
+		font: {
+			size: 1em;
+			weight: bold;
+		}
+		color: $tertiary-color;
+		padding: 10px;
+		width: auto;
+	    min-width: 100px;
+	    border-radius: 5px;
+	    background-color: lighten($tertiary-color, 35%);
+	    cursor: pointer;
+	    border: 3px solid lighten($tertiary-color, 25%);
+	}
+
+	input[type=checkbox] {
+		display: none;
+	}
+
+	input[type=checkbox] {
+		height: 32px;
+		width: 200px;
+		max-width: 100%;
+		border-radius: 0;
+		border-bottom: 0;
+		margin: 20px auto 0;
+	}
+
+	input[type="checkbox"] + label span {
+		display:inline-block;
+		width:200px;
+		height:40px;
+		line-height: 40px;
+		margin:-1px 4px 0 0;
+		vertical-align:middle;
+		cursor:pointer;
+		border-radius: $radius;
+		border: 2px solid transparent;
+		background-color: $secondary-color;
+	}
+
+	input[type="checkbox"]:checked + label span{
+		color: #fff;
+		background-color: $tertiary-color;
+		border-color: lighten($tertiary-color, 15%);
+	}
+
+	input[type="checkbox"] + label span,
+	input[type="checkbox"]:checked + label span {
+		transition:background-color 0.4s linear;
+	}
+}

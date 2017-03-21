@@ -1,0 +1,126 @@
+/*!
+ * Quiz App
+ * Simple quiz app using javascript
+ * 
+ * 
+ * @author Nour-Eddine ECH-CHEBABY
+ * @version 1.0.0
+ * @version https://github.com/chebaby/quiz-app
+ * 
+ * 
+ * Copyright 2017. ISC licensed.
+ * 
+ */
+body {
+  background-color: #f6ebf8;
+  font-family: 'Lato', sans-serif; }
+
+#quiz-app .container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  height: 70vh;
+  max-width: 700px;
+  background-color: #fff;
+  border: 3px solid #e5c5ea;
+  border-radius: 15px;
+  padding: 15px;
+  margin: 50px auto 0; }
+
+#quiz-app .points {
+  text-align: center;
+  display: block;
+  font-size: 3em;
+  color: #4caf50; }
+
+#quiz-app .evaluation {
+  text-align: center;
+  display: block;
+  color: #42A5F5; }
+
+#quiz-app .title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ba68c8; }
+
+#quiz-app .question {
+  text-align: center;
+  color: #4caf50; }
+
+#quiz-app .choices {
+  min-height: 100px;
+  height: auto;
+  padding: 15px;
+  background-color: #c7e7c8;
+  border: 3px solid #a3d7a5;
+  border-radius: 15px; }
+
+#quiz-app .row {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin: 30px auto; }
+
+#quiz-app .progress {
+  width: 100%; }
+
+#quiz-app .half {
+  width: 50%; }
+
+#quiz-app .hidden {
+  display: none !important; }
+
+#quiz-app input[type=submit],
+#quiz-app button {
+  font-size: 1em;
+  font-weight: bold;
+  color: #ba68c8;
+  padding: 10px;
+  width: auto;
+  min-width: 100px;
+  border-radius: 5px;
+  background-color: #f6ebf8;
+  cursor: pointer;
+  border: 3px solid #e5c5ea; }
+
+#quiz-app input[type=checkbox] {
+  display: none; }
+
+#quiz-app input[type=checkbox] {
+  height: 32px;
+  width: 200px;
+  max-width: 100%;
+  border-radius: 0;
+  border-bottom: 0;
+  margin: 20px auto 0; }
+
+#quiz-app input[type="checkbox"] + label span {
+  display: inline-block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  margin: -1px 4px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 15px;
+  border: 2px solid transparent;
+  background-color: #42A5F5; }
+
+#quiz-app input[type="checkbox"]:checked + label span {
+  color: #fff;
+  background-color: #ba68c8;
+  border-color: #d4a0dc; }
+
+#quiz-app input[type="checkbox"] + label span,
+#quiz-app input[type="checkbox"]:checked + label span {
+  transition: background-color 0.4s linear; }

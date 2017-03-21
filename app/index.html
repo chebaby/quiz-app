@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./css/styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, minimal-ui">
+	<title>Simple Quiz App</title>
+</head>
+<body>
+
+	<div id="quiz-app">
+		<div class="container">
+
+			<div id="score" class="hidden">
+
+				<h1 class="title">Results</h1>
+				<span class="points" id="points">5</span>
+				<h2 class="question">Is your score.</h2>
+				<h3 class="evaluation" id="evaluation">Not bad</h3>
+
+				<div class="row">
+					<button id="start">Test your knowledge</button>
+				</div>
+			</div>
+
+			<div id="test">
+				
+				<h1 class="title">Question N° <span id="order">1</span></h1>
+
+				<h2 id="question" class="question">this is my question, how are you</h2>
+
+				<div class="choices">
+
+					<form action="#" id="form-quiz">
+
+						<div class="row">
+							<div class="form-input half">
+								<input type="checkbox" name="responses" id="response-1">
+								<label for="response-1"><span class="response-1"></span></label>
+							</div>
+							<div class="form-input half">
+								<input type="checkbox" name="responses" id="response-2">
+								<label for="response-2"><span class="response-2"></span></label>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="form-input half">
+								<input type="checkbox" name="responses" id="response-3">
+								<label for="response-3"><span class="response-3"></span></label>
+							</div>
+							<div class="form-input half">
+								<input type="checkbox" name="responses" id="response-4">
+								<label for="response-4"><span class="response-4"></span></label>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="form-input">
+								<input type="submit" name="submit" id="submit" value="Next">
+							</div>
+						</div>
+
+					</form>
+
+				</div><!-- /div.choices -->
+
+				<progress class="progress" value="70" max="100">70 %</progress>
+
+			</div><!-- /div#test -->
+
+		</div><!-- /div.container -->
+
+	</div><!-- /div#quiz-app -->
+
+	<script type="text/javascript" src="./js/quiz-app.js"></script>
+</body>
+</html>
